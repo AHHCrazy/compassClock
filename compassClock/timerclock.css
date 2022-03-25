@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	/*隱藏滾輪*/
+	overflow: hidden;
+}
+
+#timer {
+	/*於原本位置偏移*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.label {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	padding: 3px, 3px;
+	font-size: 1%;
+	font-family: 標楷體;
+	/*緩衝，類似jquery的動畫效果*/
+	transition: left 0.5s, top 0.5s;
+	/*緩衝起點，左上開始*/
+	transform-origin: 0 0;
+	color: gray;
+}
